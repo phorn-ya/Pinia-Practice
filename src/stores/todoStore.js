@@ -2,7 +2,11 @@ import { defineStore } from 'pinia'
 
 export const useTodoStore = defineStore('todo', {
     state: () => ({
-        todos: []
+        todos: [
+            { id: 1, title: 'Learn Vue 3', completed: true },
+            { id: 2, title: 'Learn Pinia', completed: false },
+            { id: 3, title: 'Build a project', completed: false }
+        ]
     }),
 
     getters: {
